@@ -1,10 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Tours from './Tours';
+
 
 function App() {
-  return (
 
-    <p>SA</p>
+
+
+  return (
+    <div>
+      <h2>Our Tours</h2>
+      <div className='underLine' ></div>
+
+      <Tours />
+    </div>
   );
 }
 
