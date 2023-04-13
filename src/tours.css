@@ -1,3 +1,47 @@
+.btn {
+  background: #49a6e9;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 0.1rem;
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1.2rem
+}
+.p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.p::after {
+  content: "...";
+  animation: dots 1s infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
+
 main {
    width: 90vw;
    max-width: 1170px;
@@ -20,7 +64,7 @@ main {
  @media screen and (min-width: 768px) {
    .tours {
      display: grid;
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
      gap: 2rem;
      align-items: start;
    }
@@ -83,7 +127,7 @@ main {
    position: absolute;
    top: 0;
    right: 0;
-   color: #49a6e9;
+   color: #ffffff;
    background: #49a6e9;
    padding: 0.5rem 0.75rem;
    border-top-right-radius: 0.25rem;
